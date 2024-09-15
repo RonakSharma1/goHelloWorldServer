@@ -14,7 +14,7 @@ spec:
         app: harness-ui
     spec:
       containers:
-      - image: golang:1.17
+      - image: ronak97/gohelloworldserver
         name: harness-ui
         ports:
         - containerPort: 80
