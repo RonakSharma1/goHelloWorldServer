@@ -17,4 +17,4 @@ spec:
       - image: ronak97/gohelloworldserver:34 
         name: gohelloworldserver
         ports:
-        - containerPort: 80
+        - containerPort: 8500
