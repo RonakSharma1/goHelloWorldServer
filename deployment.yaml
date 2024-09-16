@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: goHelloWorldServer
+  name: gohelloworldserver
 spec:
   replicas: 3
   revisionHistoryLimit: 3
   selector:
     matchLabels:
-      app: goHelloWorldServer
+      app: gohelloworldserver
   template:
     metadata:
       labels:
-        app: goHelloWorldServer
+        app: gohelloworldserver
     spec:
       containers:
       - image: ronak97/gohelloworldserver:34 
-        name: goHelloWorldServer
+        name: gohelloworldserver
         ports:
         - containerPort: 80
