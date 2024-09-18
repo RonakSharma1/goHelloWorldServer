@@ -14,7 +14,7 @@ spec:
         app: gohelloworldserver
     spec:
       containers:
-      - image: ronak97/gohelloworldserver:34 
+      - image: ronak97/gohelloworldserver:<+pipeline.sequenceId> 
         name: gohelloworldserver
         ports:
         - containerPort: 8080
