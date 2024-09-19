@@ -14,7 +14,7 @@ spec:
         app: gohelloworldserver
     spec:
       containers:
-      - image: ronak97/gohelloworldserver:61
-        name: gohelloworldserver
+      - image: <+artifacts.primary.image>
+        name: <+stage.variables.name> 
         ports:
         - containerPort: 8080
