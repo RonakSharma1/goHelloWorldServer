@@ -14,7 +14,7 @@ spec:
         app: gohelloworldserver
     spec:
       containers:
-      - image: <+artifacts.primary.image>
+      - image: {{.Values.image}}
         name: gohelloworldserver
         ports:
         - containerPort: 8080
